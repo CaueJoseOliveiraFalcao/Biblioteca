@@ -14,3 +14,70 @@
     }
 }
 
+/*Livros destaque*/
+
+.img-fluid{
+    min-width: 6rem;
+    min-height: 30rem;
+    max-height: 30rem;
+    object-fit: cover;
+}
+.slick-slide{
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+}
+.slick-next{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    background-color: transparent;
+    color: white;
+    border-style: none;
+}
+.slick-prev{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    background-color: transparent;
+    left: 0;
+    z-index: 999;
+    color: white;
+    border-style: none;
+}
+.livros-div{
+    padding: 3rem;
+}
+@media (max-width:768px) {
+    .img-fluid{
+        min-width: 2rem;
+        min-height: 20rem;
+        max-height: 20rem;
+        object-fit: cover;
+    }
+}
+@media (max-width:425px) {
+    .img-fluid{
+        min-width: 2rem;
+        min-height: 13rem;
+        max-height: 13rem;
+        object-fit: cover;
+        
+    }
+    .slick-next{
+        font-size: 13px;
+    }
+    .slick-prev{
+        font-size: 13px;
+    }
+}
+/*Buy page*/
+
+.img-buy{
+    width: 20rem;
+}
